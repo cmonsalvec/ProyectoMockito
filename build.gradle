@@ -11,7 +11,7 @@
 apply plugin: 'java'
 apply plugin: 'jacoco'
 //apply plugin: 'checkstyle'
-apply plugin: 'pmd'
+//apply plugin: 'pmd'
 
 jacocoTestReport {
     group = "Reporting"
