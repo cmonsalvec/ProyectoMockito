@@ -1,0 +1,7 @@
+-classpath 'C:\\Users\\ctmonsalve\\workspace\\MockitoGradleProject2\\build\\classes\\main;C:\\Users\\ctmonsalve\\workspace\\MockitoGradleProject2\\build\\resources\\main;C:\\Users\\ctmonsalve\\.gradle\\caches\\modules-2\\files-2.1\\org.slf4j\\slf4j-api\\1.7.12\\8e20852d05222dc286bf1c71d78d0531e177c317\\slf4j-api-1.7.12.jar'
+-d 'C:\\Users\\ctmonsalve\\workspace\\MockitoGradleProject2\\build\\docs\\javadoc'
+-doctitle 'MockitoGradleProject2 API'
+-quiet 
+-windowtitle 'MockitoGradleProject2 API'
+'C:\\Users\\ctmonsalve\\workspace\\MockitoGradleProject2\\src\\main\\java\\ec\\edu\\espol\\CalService.java'
+'C:\\Users\\ctmonsalve\\workspace\\MockitoGradleProject2\\src\\main\\java\\ec\\edu\\espol\\ICalculator.java'
