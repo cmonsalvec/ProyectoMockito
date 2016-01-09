@@ -8,10 +8,13 @@ public class CalService {
 		this.cal = cal;
 	}
 	ICalculator cal;
+	;
 	int a;
 	public int addTwoNumbers(int x, int y){
-		if(x!=0){
-		return cal.add(x, y);}
-		else return cal.add(0, y);
+		return cal.add(x, y);
 	}
+	public int substractTwoNumbers(int x, int y){
+		return cal.substract(x, y);
+	}
+		
 }

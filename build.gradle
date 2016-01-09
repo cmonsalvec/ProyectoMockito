@@ -10,14 +10,70 @@
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 apply plugin: 'jacoco'
-//apply plugin: 'checkstyle'
-//apply plugin: 'pmd'
+apply plugin: 'checkstyle'
+apply plugin: 'pmd'
+apply plugin: 'findbugs'
 
 jacocoTestReport {
     group = "Reporting"
     description = "Generate Jacoco coverage reports after running tests."
     additionalSourceDirs = files(sourceSets.main.allJava.srcDirs)
 }
+
+checkstyle {  
+	toolVersion = 6.5
+	ignoreFailures = true
+}
+
+pmd {
+	ruleSets = ["java-basic","java-braces","java-naming",
+            "java-clone",
+            "java-codesize",
+            "java-controversial",
+            "java-coupling",
+            "java-design", 
+            "java-finalizers",
+            "java-imports",
+            "java-j2ee",
+            "java-javabeans",
+            "java-junit",
+            "java-logging-jakarta-commons",
+            "java-logging-java",
+            "java-migrating",
+            "java-optimizations",
+            "java-strictexception",
+            "java-strings",
+            "java-sunsecure",
+            "java-typeresolution",
+            "java-unusedcode"]
+	ignoreFailures = true
+}
+
+tasks.withType(Pmd){
+	reports {
+		xml.enabled = false
+		html.enabled = true
+	}
+}
+
+findbugs {  
+	ignoreFailures = true
+}
+
+findbugsMain {
+  reports {
+    xml.enabled = false
+    html.enabled = true
+  }
+}
+
+findbugsTest {
+  reports {
+    xml.enabled = false
+    html.enabled = true
+  }
+}
+
 
 // In this section you declare where to find the dependencies of your project
 repositories {

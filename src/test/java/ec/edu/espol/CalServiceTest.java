@@ -19,6 +19,6 @@ public class CalServiceTest {
 
 	@Test
 	public void testAddTwoNumbers(){
-		Assert.assertEquals(6, calService.addTwoNumbers(3, 3));
+		Assert.assertEquals(5, calService.addTwoNumbers(3, 3));
 	}
 }
